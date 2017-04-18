@@ -16,7 +16,7 @@ html
   
   nav(class="nav")
     a(href="/") Start
-    a(href="/about") Kbygg
+    a(href="/about") Records
 
   body(role='document')
     main(role='main' id='{{ pageId }}')

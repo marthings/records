@@ -22,7 +22,11 @@ module.exports = {
     new Records({
       addDataTo: locals,
       pages: {
-        url: 'https://xn--digilr-fua.se/wp-json/wp/v2/pages/'
+        url: 'https://xn--digilr-fua.se/wp-json/wp/v2/pages?per_page=10&parent=112',
+        template: {
+          path: '/views/templates/single.sgr',
+          output: (post) => { return `posts/${post.slug}.html` }
+        }
       },
       sitemeta: { file: 'data.json' },
     })

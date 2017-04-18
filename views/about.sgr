@@ -3,4 +3,4 @@ block(name='title')
 
 extends(src='layout.sgr')
   block(name='content')
-    h2 Vad vi gör!
+    h2 Records!
